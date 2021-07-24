@@ -1,7 +1,5 @@
 package com.company;
 
-//import java.awt.event.KeyListener;
-
 public class Dialog {
 
     public void Hello()
@@ -11,7 +9,7 @@ public class Dialog {
 
     public String[] GetTask()
     {
-        System.out.println("Введите числа через пробел и нажмите \"Enter\"");///("Введите в стоку пример и нажмите \"Enter\"");
+        System.out.println("Введите числа через пробел и нажмите \"Enter\"");
         java.util.Scanner scan=new  java.util.Scanner(System.in);
         String[] Task=new String[2];
         Task[0]=scan.nextLine();
@@ -32,8 +30,6 @@ public class Dialog {
             case "4":
                 Task[1]="Min";
                 break;
-//            default:
-//                System.out.println("Нет такой опера");
         }
 
         return  Task;
@@ -43,7 +39,6 @@ public class Dialog {
         System.out.println("Результат операции: "+result+
                 "\nдля выхода введите \"Q\", для продолжения любую другую строку.");
 
-        //javax.swing.JFrame frame=new Listen();
         java.util.Scanner scan=new  java.util.Scanner(System.in);
         String exit=scan.nextLine();
 
